@@ -2,7 +2,7 @@
 #include <fstream>
 #include <Windows.h>
 
-#include "BFS.hpp"
+#include "BRLLib\BFS.hpp"
 
 INT wmain(INT argc, PCWSTR* argv)
 {

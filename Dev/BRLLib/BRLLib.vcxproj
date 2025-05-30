@@ -28,9 +28,14 @@
     <ClInclude Include="LogAction.hpp" />
     <ClInclude Include="BFS.hpp" />
     <ClInclude Include="IEnumerable.hpp" />
+    <ClInclude Include="IEnumerator.hpp" />
+    <ClInclude Include="RegData.hpp" />
+    <ClInclude Include="RegNode.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BFS.cpp" />
+    <ClCompile Include="RegData.cpp" />
+    <ClCompile Include="RegNode.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
