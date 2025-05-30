@@ -4,15 +4,27 @@
     <Filter Include="AutoClose">
       <UniqueIdentifier>{dc321b41-2b5d-4c14-9dee-1db4dd040280}</UniqueIdentifier>
     </Filter>
+    <Filter Include="BFS">
+      <UniqueIdentifier>{1a31a082-7c50-4b3a-90ec-55d005297382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enumerators">
+      <UniqueIdentifier>{79e64a0c-6b83-4bd6-95a8-988340c0a42d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\AutoCloseHandle.hpp">
+    <ClCompile Include="BFS\BFS.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoClose\AutoCloseHandle.hpp">
       <Filter>AutoClose</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AutoClose\AutoCloseHandle.cpp">
-      <Filter>AutoClose</Filter>
-    </ClCompile>
+    <ClInclude Include="BFS\BFS.hpp">
+      <Filter>BFS</Filter>
+    </ClInclude>
+    <ClInclude Include="Enumerators\IEnumerable.hpp">
+      <Filter>Enumerators</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
