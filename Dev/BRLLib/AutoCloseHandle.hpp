@@ -4,14 +4,12 @@
 #include <memory>
 #include <functional>
 
-class AutoCloseHandle: public std::unique_ptr<std::remove_pointer_t<HANDLE>, BOOL(*)(HANDLE)>
+class AutoCloseHandle: public std::shared_ptr<std::remove_pointer_t<HANDLE>>
 {
 public:
 	AutoCloseHandle(HANDLE handle) :
-		std::unique_ptr<std::remove_pointer_t<HANDLE>, BOOL(*)(HANDLE)>(handle, CloseHandle)
+		std::shared_ptr<std::remove_pointer_t<HANDLE>>(handle, CloseHandle)
 	{}
 
 	~AutoCloseHandle() = default;
-	AutoCloseHandle(const AutoCloseHandle&) = delete;
-	AutoCloseHandle& operator=(const AutoCloseHandle&) = delete;
 };
