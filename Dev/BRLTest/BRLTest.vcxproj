@@ -24,6 +24,7 @@
     <ProjectGuid>{0a628dfe-8c3c-4f19-81e6-d131cd9a45f5}</ProjectGuid>
     <RootNamespace>TreeListerDll</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BRLTest</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
