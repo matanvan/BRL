@@ -4,7 +4,7 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeListerLib", "TreeListerLib\TreeListerLib.vcxproj", "{7F1EF986-CF1A-4D43-A7FC-D886D1AB7F8A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeListerDll", "TreeListerDll\TreeListerDll.vcxproj", "{0A628DFE-8C3C-4F19-81E6-D131CD9A45F5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BRLDll", "TreeListerDll\TreeListerDll.vcxproj", "{0A628DFE-8C3C-4F19-81E6-D131CD9A45F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
