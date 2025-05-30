@@ -3,7 +3,7 @@
 #include <iterator>
 #include <queue>
 
-template <>
+template <typename T>
 class BFS
 {
 public:

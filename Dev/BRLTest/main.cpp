@@ -2,7 +2,7 @@
 #include <fstream>
 #include <Windows.h>
 
-#include "BRLLib/LogAction.hpp"
+#include "BRL.hpp"
 
 INT wmain(INT argc, PCWSTR* argv)
 {
