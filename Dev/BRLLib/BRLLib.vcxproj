@@ -20,6 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AutoCloseHandle.hpp" />
+    <ClInclude Include="Common.hpp" />
+    <ClInclude Include="IAction.hpp" />
+    <ClInclude Include="IFilter.hpp" />
+    <ClInclude Include="ISerializer.hpp" />
+    <ClInclude Include="IWriter.hpp" />
+    <ClInclude Include="LogAction.hpp" />
     <ClInclude Include="BFS.hpp" />
     <ClInclude Include="IEnumerable.hpp" />
   </ItemGroup>
