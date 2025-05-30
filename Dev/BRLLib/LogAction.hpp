@@ -13,7 +13,7 @@ public:
 	LogAction(const LogAction&) = delete;
 	LogAction operator=(const LogAction&) = delete;
 
-	void execute(const TData& data) override;
+	virtual void execute(const TData& data) override;
 
 private:
 	IWriterUPtr m_writer;
