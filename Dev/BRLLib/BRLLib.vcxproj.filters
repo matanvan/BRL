@@ -6,13 +6,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\AutoCloseHandle.hpp">
+    <ClInclude Include="AutoCloseHandle.hpp">
       <Filter>AutoClose</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="AutoClose\AutoCloseHandle.cpp">
-      <Filter>AutoClose</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
