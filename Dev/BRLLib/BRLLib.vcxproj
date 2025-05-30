@@ -20,6 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AutoCloseHandle.hpp" />
+    <ClInclude Include="BFS.hpp" />
+    <ClInclude Include="IEnumerable.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BFS.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -154,14 +159,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BFS\BFS.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AutoClose\AutoCloseHandle.hpp" />
-    <ClInclude Include="BFS\BFS.hpp" />
-    <ClInclude Include="Enumerators\IEnumerable.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

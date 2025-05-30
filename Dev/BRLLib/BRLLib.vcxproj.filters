@@ -12,19 +12,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BFS\BFS.cpp">
-      <Filter>BFS</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AutoClose\AutoCloseHandle.hpp">
+    <ClInclude Include="AutoCloseHandle.hpp">
       <Filter>AutoClose</Filter>
     </ClInclude>
-    <ClInclude Include="BFS\BFS.hpp">
+    <ClInclude Include="BFS.hpp">
       <Filter>BFS</Filter>
     </ClInclude>
-    <ClInclude Include="Enumerators\IEnumerable.hpp">
+    <ClInclude Include="IEnumerable.hpp">
       <Filter>Enumerators</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BFS.cpp">
+      <Filter>BFS</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

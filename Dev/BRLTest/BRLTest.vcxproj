@@ -152,12 +152,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TreeListerLib\TreeListerLib.vcxproj">
-      <Project>{7f1ef986-cf1a-4d43-a7fc-d886d1ab7f8a}</Project>
-    </ProjectReference>
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ProjectReference Include="..\BRLLib\BRLLib.vcxproj">
+      <Project>{7f1ef986-cf1a-4d43-a7fc-d886d1ab7f8a}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
