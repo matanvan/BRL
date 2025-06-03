@@ -1,45 +1,59 @@
 #pragma once
 
-#include <Windows.h>
-#include <string>
-#include <variant>
+#include "Common.hpp"
+#include "ntdll.hpp"
 
 #include "IEnumerable.hpp"
+#include "AutoCloseRegKey.hpp"
+#include "RegData.hpp"
 
-class RegNode: public IEnumerable<void>
+class RegNode
 {
 private:
 	class Key
 	{
 	public:
-		Key() = delete;
-		~Key() = delete;
-		Key(const Key&) = delete;
-		Key& operator=(const Key&) = delete;
+		Key(const HKEY hkey);
+		Key(const HKEY hkey, const std::wstring& subpath);
+		Key(const Key& key, const std::wstring& subpath);
+		virtual ~Key() = default;
+		Key(Key&&) = default;
+		Key& operator=(Key&&) = default;
+
+		virtual HKEY get() const;
+		virtual Buffer query(const KEY_INFORMATION_CLASS info_class) const;
 
 	private:
-
+		mutable std::variant<std::pair<AutoCloseRegKey, std::wstring>, AutoCloseRegKey> m_key;
 	};
 
 	class Value
 	{
 	public:
-		Value() = delete;
-		~Value() = delete;
-		Value(const Value&) = delete;
-		Value& operator=(const Value&) = delete;
+		Value();
+		virtual ~Value() = default;
+		Value(Value&&) = default;
+		Value& operator=(Value&&) = default;
+
+		virtual const Key& key() const { return m_key; }
 
 	private:
+		const Key m_key;
+		const std::wstring m_name;
 	};
 
-	RegNode();
+private:
+	RegNode(Key&& key);
 
 public:
-	~RegNode() = default;
-	RegNode(const RegNode&) = delete;
-	RegNode& operator=(const RegNode&) = delete;
+	virtual ~RegNode() = default;
+	RegNode(RegNode&&) = default;
+	RegNode& operator=(RegNode&&) = default;
 
-	virtual RegNode key(const HKEY parent, const std::wstring& subpath);
+	virtual RegNode subkey(const std::wstring& subpath) const;
+	virtual RegData info() const;
+
+	static const RegNode HKLM;
 
 private:
 	const std::variant<Key, Value> m_node;

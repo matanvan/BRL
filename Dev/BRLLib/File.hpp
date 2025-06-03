@@ -18,8 +18,8 @@ public:
 		const uint32_t flags_and_attributes = FILE_ATTRIBUTE_NORMAL
 	);
 	virtual ~File() = default;
-	File(const File&) = delete;
-	File operator=(const File&) = delete;
+	File(File&&) = default;
+	File& operator=(File&&) = default;
 
 	virtual void write(const Buffer& data) override;
 

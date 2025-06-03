@@ -6,10 +6,7 @@ template <typename TEnumerator>
 class IEnumerable
 {
 public:
-	IEnumerable() = delete;
-	~IEnumerable() = delete;
-	IEnumerable(const IEnumerable&) = delete;
-	IEnumerable& operator=(const IEnumerable&) = delete;
+	virtual ~IEnumerable() = default;
 	
 	virtual TEnumerator enumerate() const = 0;
 };

@@ -31,6 +31,9 @@
     <Filter Include="Registry">
       <UniqueIdentifier>{db3efd26-0b98-4c5e-85f6-4e660aefb525}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Writers\File">
+      <UniqueIdentifier>{d2da1ec4-a215-44a7-858a-6bfffed789cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AutoCloseHandle.hpp">
@@ -50,6 +53,15 @@
     </ClInclude>
     <ClInclude Include="RegData.hpp">
       <Filter>Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoCloseRegKey.hpp">
+      <Filter>AutoClose</Filter>
+    </ClInclude>
+    <ClInclude Include="File.hpp">
+      <Filter>Writers\File</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll.hpp">
+      <Filter>Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="RegNode.cpp">
       <Filter>Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Writers\File</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

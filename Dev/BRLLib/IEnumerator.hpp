@@ -1,15 +1,12 @@
 #pragma once
 
-#include <optional>
+#include "Common.hpp"
 
 template <typename T>
 class IEnumerator
 {
 public:
-	IEnumerator() = delete;
-	~IEnumerator() = delete;
-	IEnumerator(const IEnumerator&) = delete;
-	IEnumerator& operator=(const IEnumerator&) = delete;
+	virtual ~IEnumerator() = default;
 
 	virtual std::optional<T> next() = 0;
 };

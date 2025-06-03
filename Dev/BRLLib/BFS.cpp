@@ -1,6 +1,6 @@
 #include "BFS.hpp"
 
-BFS::BFS()
-{
-	
-}
+//BFS::BFS()
+//{
+//	
+//}
