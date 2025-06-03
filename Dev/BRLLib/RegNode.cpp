@@ -115,4 +115,4 @@ Buffer RegNode::Key::query(const KEY_INFORMATION_CLASS info_class) const
 	return info_buffer;
 }
 
-const RegNode RegNode::HKLM = RegNode(RegNode::Key(HKEY_LOCAL_MACHINE));
+const RegNode RegNode::HKLM = RegNode(Key(HKEY_LOCAL_MACHINE));
