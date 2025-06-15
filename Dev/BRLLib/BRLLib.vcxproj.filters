@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AutoClose">
+      <UniqueIdentifier>{dc321b41-2b5d-4c14-9dee-1db4dd040280}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Filters">
+      <UniqueIdentifier>{f1fc6e2d-2fd2-4dbb-b1b5-fc17b05e241f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actions">
+      <UniqueIdentifier>{1aae15d2-1cac-4267-9f9b-9513b3fae42e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actions\LogAction">
+      <UniqueIdentifier>{dc2f850d-3e3e-40c1-a807-f88e4c6eee13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serializers">
+      <UniqueIdentifier>{46ce1d17-ebf3-47b0-9d92-de7e21d566c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{74c84731-417d-47cb-9762-f0e77d5d40a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Writers">
+      <UniqueIdentifier>{0722082f-d45d-474f-873e-820bedef4b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BFS">
+      <UniqueIdentifier>{1a31a082-7c50-4b3a-90ec-55d005297382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Registry">
+      <UniqueIdentifier>{db3efd26-0b98-4c5e-85f6-4e660aefb525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Writers\File">
+      <UniqueIdentifier>{d2da1ec4-a215-44a7-858a-6bfffed789cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BFS.hpp">
+      <Filter>BFS</Filter>
+    </ClInclude>
+    <ClInclude Include="RegNode.hpp">
+      <Filter>Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="RegData.hpp">
+      <Filter>Registry</Filter>
+    </ClInclude>
+    <ClInclude Include="File.hpp">
+      <Filter>Writers\File</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoClose.hpp">
+      <Filter>AutoClose</Filter>
+    </ClInclude>
+    <ClInclude Include="BRLException.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BRLStatus.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IFilter.hpp">
+      <Filter>Filters</Filter>
+    </ClInclude>
+    <ClInclude Include="IAction.hpp">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="LogAction.hpp">
+      <Filter>Actions\LogAction</Filter>
+    </ClInclude>
+    <ClInclude Include="ISerializer.hpp">
+      <Filter>Serializers</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="IWriter.hpp">
+      <Filter>Writers</Filter>
+    </ClInclude>
+    <ClCompile Include="RegData.cpp">
+      <Filter>Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="RegNode.cpp">
+      <Filter>Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Writers\File</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
