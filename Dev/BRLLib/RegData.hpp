@@ -4,15 +4,19 @@
 
 struct RegKeyData
 {
-	std::chrono::system_clock::time_point m_last_write_time;
-	std::wstring m_path;
+	using clock = std::chrono::file_clock;
+	clock::time_point m_last_write_time;
 	std::wstring m_class_name;
 	uint32_t m_subkeys_count;
-	uint32_t m_max_subkey_name_size_bytes;
+	// In unicode characters, not including null terminator
+	uint32_t m_max_subkey_name_len;
 	uint32_t m_values_count;
-	uint32_t m_max_value_name_size_bytes;
-	uint32_t m_max_value_size_bytes;
-	uint32_t m_max_class_name_size_bytes;
+	// In unicode characters, not including null terminator
+	uint32_t m_max_value_name_len;
+	// In bytes
+	uint32_t m_max_value_data_size;
+	// In unicode characters, not including null terminator
+	uint32_t m_max_class_name_len;
 };
 
 struct RegValueData

@@ -16,4 +16,6 @@
 #include <optional>
 #include <variant>
 
+#include "BRLException.hpp"
+
 using Buffer = std::vector<uint8_t>;

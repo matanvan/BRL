@@ -36,9 +36,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AutoCloseHandle.hpp">
-      <Filter>AutoClose</Filter>
-    </ClInclude>
     <ClInclude Include="BFS.hpp">
       <Filter>BFS</Filter>
     </ClInclude>
@@ -54,20 +51,23 @@
     <ClInclude Include="RegData.hpp">
       <Filter>Registry</Filter>
     </ClInclude>
-    <ClInclude Include="AutoCloseRegKey.hpp">
-      <Filter>AutoClose</Filter>
-    </ClInclude>
     <ClInclude Include="File.hpp">
       <Filter>Writers\File</Filter>
     </ClInclude>
     <ClInclude Include="ntdll.hpp">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="AutoClose.hpp">
+      <Filter>AutoClose</Filter>
+    </ClInclude>
+    <ClInclude Include="BRLException.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="BRLStatus.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BFS.cpp">
-      <Filter>BFS</Filter>
-    </ClCompile>
     <ClInclude Include="IFilter.hpp">
       <Filter>Filters</Filter>
     </ClInclude>

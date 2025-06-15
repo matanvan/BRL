@@ -4,7 +4,7 @@
 
 #include "Common.hpp"
 
-#include "AutoCloseHandle.hpp"
+#include "AutoClose.hpp"
 #include "IWriter.hpp"
 
 class File : public IWriter
@@ -18,8 +18,8 @@ public:
 		const uint32_t flags_and_attributes = FILE_ATTRIBUTE_NORMAL
 	);
 	virtual ~File() = default;
-	File(File&&) = default;
-	File& operator=(File&&) = default;
+	File(const File&) = delete;
+	File& operator=(const File&) = delete;
 
 	virtual void write(const Buffer& data) override;
 

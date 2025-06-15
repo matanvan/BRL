@@ -28,12 +28,12 @@ void File::write(const Buffer& data)
 		nullptr
 	))
 	{
-		throw std::exception("TODO");
+		throw BRLException(BRLStatus::FILE_WRITE_WRITEFILE_FAILED, GetLastError());
 	}
 
 	if (bytes_written != static_cast<uint32_t>(data.size()))
 	{
-		throw std::exception("TODO");
+		throw BRLException(BRLStatus::FILE_WRITE_WRITEFILE_PARTIAL_WRITE);
 	}
 }
 
@@ -57,7 +57,7 @@ HANDLE File::_s_create_file(
 
 	if (INVALID_HANDLE_VALUE == handle)
 	{
-		throw std::exception("TODO");
+		throw BRLException(BRLStatus::FILE_S_CREATE_FILE_CREATEFILEW_FAILED, GetLastError());
 	}
 
 	return handle;
